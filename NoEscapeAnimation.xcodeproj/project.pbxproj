@@ -10,6 +10,7 @@
 		FAC2C1A41AA38B4A00F68F8D /* NoEscapeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2C1A31AA38B4A00F68F8D /* NoEscapeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC2C1AA1AA38B4A00F68F8D /* NoEscapeAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2C19E1AA38B4A00F68F8D /* NoEscapeAnimation.framework */; };
 		FAC2C1B11AA38B4A00F68F8D /* NoEscapeAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2C1B01AA38B4A00F68F8D /* NoEscapeAnimationTests.swift */; };
+		FAC2C1F61AA38BC300F68F8D /* NoEscapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2C1F51AA38BC300F68F8D /* NoEscapeAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FAC2C1A91AA38B4A00F68F8D /* NoEscapeAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoEscapeAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC2C1AF1AA38B4A00F68F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC2C1B01AA38B4A00F68F8D /* NoEscapeAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEscapeAnimationTests.swift; sourceTree = "<group>"; };
+		FAC2C1F51AA38BC300F68F8D /* NoEscapeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEscapeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FAC2C1A31AA38B4A00F68F8D /* NoEscapeAnimation.h */,
 				FAC2C1A11AA38B4A00F68F8D /* Supporting Files */,
+				FAC2C1F51AA38BC300F68F8D /* NoEscapeAnimation.swift */,
 			);
 			path = NoEscapeAnimation;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC2C1F61AA38BC300F68F8D /* NoEscapeAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		FAC2C1B51AA38B4A00F68F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FAC2C1B61AA38B4A00F68F8D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -399,6 +406,7 @@
 				FAC2C1B61AA38B4A00F68F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAC2C1B71AA38B4A00F68F8D /* Build configuration list for PBXNativeTarget "NoEscapeAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +415,7 @@
 				FAC2C1B91AA38B4A00F68F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
