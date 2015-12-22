@@ -7,32 +7,32 @@
 //
 
 import UIKit
+import Swift
 
 private var delegates = Set<AnimationDelegate>()
 
 public func animateViews(
-    #duration: NSTimeInterval,
+    duration duration: NSTimeInterval,
     delay: NSTimeInterval = 0,
     curve: UIViewAnimationCurve? = nil,
-    @noescape #animations: () -> Void,
+    @noescape animations: () -> Void,
     completion: (Bool -> Void)? = nil) {
-        
-        var wrapper: AnimationDelegate? = nil
-        if let completion = completion {
-            wrapper = AnimationDelegate(callback: completion)
-            delegates.insert(wrapper!)
-        }
+
         UIView.beginAnimations(nil, context: nil)
-        
+
+        if let completion = completion {
+            let wrapper = AnimationDelegate(callback: completion)
+            delegates.insert(wrapper)
+            UIView.setAnimationDelegate(wrapper)
+            UIView.setAnimationDidStopSelector("animationDidStop:finished:context:")
+        }
+
         UIView.setAnimationDuration(duration)
         UIView.setAnimationDelay(delay)
         if let curve = curve {
             UIView.setAnimationCurve(curve)
         }
-        
-        UIView.setAnimationDelegate(wrapper)
-        UIView.setAnimationDidStopSelector("animationDidStop:finished:context:")
-        
+
         animations()
         
         UIView.commitAnimations()

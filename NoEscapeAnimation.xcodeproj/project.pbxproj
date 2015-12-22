@@ -8,28 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FAC2C1A41AA38B4A00F68F8D /* NoEscapeAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC2C1A31AA38B4A00F68F8D /* NoEscapeAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FAC2C1AA1AA38B4A00F68F8D /* NoEscapeAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC2C19E1AA38B4A00F68F8D /* NoEscapeAnimation.framework */; };
-		FAC2C1B11AA38B4A00F68F8D /* NoEscapeAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2C1B01AA38B4A00F68F8D /* NoEscapeAnimationTests.swift */; };
 		FAC2C1F61AA38BC300F68F8D /* NoEscapeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC2C1F51AA38BC300F68F8D /* NoEscapeAnimation.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FAC2C1AB1AA38B4A00F68F8D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FAC2C1951AA38B4A00F68F8D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FAC2C19D1AA38B4A00F68F8D;
-			remoteInfo = NoEscapeAnimation;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FAC2C19E1AA38B4A00F68F8D /* NoEscapeAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoEscapeAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC2C1A21AA38B4A00F68F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC2C1A31AA38B4A00F68F8D /* NoEscapeAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoEscapeAnimation.h; sourceTree = "<group>"; };
-		FAC2C1A91AA38B4A00F68F8D /* NoEscapeAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoEscapeAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAC2C1AF1AA38B4A00F68F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC2C1B01AA38B4A00F68F8D /* NoEscapeAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoEscapeAnimationTests.swift; sourceTree = "<group>"; };
 		FAC2C1F51AA38BC300F68F8D /* NoEscapeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoEscapeAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +26,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC2C1A61AA38B4A00F68F8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC2C1AA1AA38B4A00F68F8D /* NoEscapeAnimation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +33,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC2C1A01AA38B4A00F68F8D /* NoEscapeAnimation */,
-				FAC2C1AD1AA38B4A00F68F8D /* NoEscapeAnimationTests */,
 				FAC2C19F1AA38B4A00F68F8D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC2C19E1AA38B4A00F68F8D /* NoEscapeAnimation.framework */,
-				FAC2C1A91AA38B4A00F68F8D /* NoEscapeAnimationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,23 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				FAC2C1A21AA38B4A00F68F8D /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FAC2C1AD1AA38B4A00F68F8D /* NoEscapeAnimationTests */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2C1B01AA38B4A00F68F8D /* NoEscapeAnimationTests.swift */,
-				FAC2C1AE1AA38B4A00F68F8D /* Supporting Files */,
-			);
-			path = NoEscapeAnimationTests;
-			sourceTree = "<group>";
-		};
-		FAC2C1AE1AA38B4A00F68F8D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FAC2C1AF1AA38B4A00F68F8D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,37 +95,18 @@
 			productReference = FAC2C19E1AA38B4A00F68F8D /* NoEscapeAnimation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FAC2C1A81AA38B4A00F68F8D /* NoEscapeAnimationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FAC2C1B71AA38B4A00F68F8D /* Build configuration list for PBXNativeTarget "NoEscapeAnimationTests" */;
-			buildPhases = (
-				FAC2C1A51AA38B4A00F68F8D /* Sources */,
-				FAC2C1A61AA38B4A00F68F8D /* Frameworks */,
-				FAC2C1A71AA38B4A00F68F8D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FAC2C1AC1AA38B4A00F68F8D /* PBXTargetDependency */,
-			);
-			name = NoEscapeAnimationTests;
-			productName = NoEscapeAnimationTests;
-			productReference = FAC2C1A91AA38B4A00F68F8D /* NoEscapeAnimationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		FAC2C1951AA38B4A00F68F8D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Alex Pretzlav";
 				TargetAttributes = {
 					FAC2C19D1AA38B4A00F68F8D = {
-						CreatedOnToolsVersion = 6.3;
-					};
-					FAC2C1A81AA38B4A00F68F8D = {
 						CreatedOnToolsVersion = 6.3;
 					};
 				};
@@ -185,20 +124,12 @@
 			projectRoot = "";
 			targets = (
 				FAC2C19D1AA38B4A00F68F8D /* NoEscapeAnimation */,
-				FAC2C1A81AA38B4A00F68F8D /* NoEscapeAnimationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FAC2C19C1AA38B4A00F68F8D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FAC2C1A71AA38B4A00F68F8D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,23 +147,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAC2C1A51AA38B4A00F68F8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FAC2C1B11AA38B4A00F68F8D /* NoEscapeAnimationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FAC2C1AC1AA38B4A00F68F8D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FAC2C19D1AA38B4A00F68F8D /* NoEscapeAnimation */;
-			targetProxy = FAC2C1AB1AA38B4A00F68F8D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FAC2C1B21AA38B4A00F68F8D /* Debug */ = {
@@ -357,36 +272,6 @@
 			};
 			name = Release;
 		};
-		FAC2C1B81AA38B4A00F68F8D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NoEscapeAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FAC2C1B91AA38B4A00F68F8D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = NoEscapeAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,15 +289,6 @@
 			buildConfigurations = (
 				FAC2C1B51AA38B4A00F68F8D /* Debug */,
 				FAC2C1B61AA38B4A00F68F8D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FAC2C1B71AA38B4A00F68F8D /* Build configuration list for PBXNativeTarget "NoEscapeAnimationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FAC2C1B81AA38B4A00F68F8D /* Debug */,
-				FAC2C1B91AA38B4A00F68F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
